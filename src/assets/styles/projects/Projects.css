@@ -1,0 +1,52 @@
+:root {
+  --container-color: #f9f9f9;
+  --heading-color: #147efb;
+  --second-color: #000000;
+  --first-color: #ffffff;
+  --project-img: #75757533;
+  --night-color: #2b3342;
+}
+
+.projects {
+  background: var(--container-color);
+  padding: 4.2rem 0;
+  transition: all 0.4s cubic-bezier(0.69, 0.12, 0.19, 0.72);
+}
+
+.projects-content {
+  display: flex;
+  flex-direction: column;
+  transition: all 1s ease-in-out;
+}
+
+.projects-content p {
+  color: var(--heading-color);
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  transition: all 0.4s cubic-bezier(0.69, 0.12, 0.19, 0.72);
+}
+
+.projects-content h3 {
+  color: var(--second-color);
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin-bottom: 6rem;
+  transition: all 0.4s cubic-bezier(0.69, 0.12, 0.19, 0.72);
+}
+
+@media (max-width: 600px) {
+  .projects-content {
+    text-align: center;
+  }
+}
+
+/*******************************************  Night Light Effects  ********************************************************/
+
+.projects.dark {
+  background: var(--night-color);
+}
+
+.projects.dark .projects-content h3 {
+  color: var(--first-color);
+}

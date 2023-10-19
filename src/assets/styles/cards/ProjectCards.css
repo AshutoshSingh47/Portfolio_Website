@@ -1,0 +1,229 @@
+:root {
+  --second-color: #000000;
+  --date-color: #151313c5;
+  --project-img: #75757533;
+  --project-definition-color: #767676;
+  --project-title-color: #2d2e32;
+  --night-light-project: #475275;
+  --night-light-text-color: #949ea8;
+  --night-light-span-color: #c9c9c9;
+}
+
+.swiper {
+  border-radius: 1.2rem;
+}
+
+.projects-grid {
+  width: 100%;
+  height: auto;
+  display: grid;
+  gap: 3rem;
+  grid-gap: 5rem;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  border-radius: 1.2rem;
+}
+
+.projects-grid .pro {
+  display: flex;
+  border-radius: 1.2rem;
+  background-color: var(--first-color);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.projects-grid .pro_1 {
+  flex-direction: row;
+  gap: 3rem;
+  height: 27rem;
+  padding: 1rem;
+  transition: all 1s ease-in-out;
+}
+
+.reversed-proj {
+  flex-direction: row-reverse !important;
+}
+
+.projects-grid .pro_img {
+  height: auto;
+  width: 33rem;
+  overflow: hidden;
+  border-radius: 1.2rem;
+  background-color: var(--project-img);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#meme_sharing_project_img {
+  box-shadow: none;
+  background-color: unset;
+}
+
+.projects-grid .pro_img img {
+  height: auto;
+  width: 100%;
+  transform: translateY(0%);
+  transition: transform 10s ease-in-out;
+}
+
+.projects-grid .pro_img .PG_Life_Website_img {
+  transition: transform 4s ease-in-out;
+}
+
+.projects-grid .pro_img .FitNationX_Website_img:hover {
+  transition: transform 4s ease-in-out;
+}
+
+.projects-grid .pro_img .E_Com_Minimalist_Website_img:hover {
+  transform: translateY(-67.5%);
+}
+
+.projects-grid .pro_img .PG_Life_Website_img:hover {
+  transform: translateY(-39.5%);
+}
+
+.projects-grid .pro_img .FitNationX_Website_img:hover {
+  transform: translateY(-34.5%);
+}
+
+.projects-grid .pro_text {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  justify-content: center;
+  text-align: center;
+  width: 24rem;
+}
+
+.projects-grid .pro_text h3 {
+  gap: 0.3rem;
+  display: flex;
+  font-size: 1.1rem;
+  position: relative;
+  align-items: center;
+  margin-bottom: 1rem;
+  justify-content: center;
+  text-transform: uppercase;
+  color: var(--project-title-color) !important;
+}
+
+.projects-grid .pro_text span {
+  color: var(--date-color);
+  font-size: 0.9rem;
+  transition: all 0.4s cubic-bezier(0.69, 0.12, 0.19, 0.72);
+}
+
+.projects-grid .pro_text p {
+  font-weight: 500;
+  font-size: 1.1rem;
+  text-align: center;
+  color: var(--project-definition-color);
+}
+
+.projects-grid .pro_text .stack {
+  gap: 0.8rem;
+  display: flex;
+  justify-content: center;
+}
+
+.stack p {
+  padding: 0.7rem 0.8rem;
+  font-weight: 600 !important;
+  color: var(--second-color) !important;
+  background-color: var(--first-color);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-links,
+.project-links a {
+  display: flex;
+  align-items: center;
+}
+
+.project-links {
+  gap: 1rem;
+  margin-top: 1.1rem;
+  justify-content: space-evenly;
+}
+
+.project-links a {
+  gap: 0.5rem;
+  font-weight: 500;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: var(--project-title-color);
+  transition: all 0.4s cubic-bezier(0.69, 0.12, 0.19, 0.72);
+}
+
+.projects-grid .project-links i.bi-github,
+.projects-grid .project-links i.bi-box-arrow-up-right {
+  transition: all 0.4s cubic-bezier(0.69, 0.12, 0.19, 0.72);
+}
+
+@media (max-width: 1056px) {
+  .projects-grid .pro_1 {
+    flex-direction: column !important;
+    gap: 4rem;
+    margin: 0 auto;
+    height: 50rem;
+    width: fit-content;
+    padding: 1rem;
+  }
+
+  .projects-grid .pro_text {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 800px) {
+  .projects-grid .pro_img {
+    width: 100%;
+  }
+
+  #meme_sharing_project_img {
+    transition: all 1s ease-in-out;
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  #meme_sharing_project_img {
+    padding: 4rem 0 0 0;
+  }
+
+  .projects-grid .stack {
+    width: 100%;
+  }
+
+  .projects-grid .pro_1 {
+    width: 100%;
+  }
+  .projects-grid .pro_text {
+    width: 100%;
+  }
+}
+
+/*******************************************  Night Light Effects  ********************************************************/
+
+.projects-grid.dark .pro {
+  background-color: var(--night-light-project);
+}
+
+.projects-grid.dark .pro_text h3 {
+  color: var(--first-color) !important;
+}
+
+.projects-grid.dark .pro_text p {
+  color: var(--night-light-text-color);
+}
+
+.projects-grid.dark .project-links i.bi-github,
+.projects-grid.dark .project-links i.bi-box-arrow-up-right {
+  color: var(--first-color);
+}
+
+.projects-grid.dark .project-links a {
+  color: var(--first-color);
+}
+
+.projects-grid.dark .pro_text span {
+  color: var(--night-light-span-color);
+}

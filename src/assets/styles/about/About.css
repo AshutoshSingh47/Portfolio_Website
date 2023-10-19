@@ -1,0 +1,161 @@
+:root {
+  --container-color: #f9f9f9;
+  --detail-text-color: #555;
+  --heading-color: #147efb;
+  --about-night-color: #2b3342;
+  --text-color-normal: #949ea8;
+  --text-color-light: #4c5967;
+  --second-color: #000000;
+}
+
+.container {
+  padding: 0 2rem;
+  max-width: 70rem;
+}
+
+.about {
+  background: var(--container-color);
+  padding: 4.2rem 0;
+  transition: all 0.4s cubic-bezier(0.69, 0.12, 0.19, 0.72);
+}
+
+.about-content {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+}
+
+.about-img-side {
+  position: relative;
+}
+
+.work-emoji {
+  position: absolute;
+  width: 4rem !important;
+  bottom: 43px;
+  right: 94px;
+  z-index: 10;
+}
+
+.side-img {
+  border-radius: 1.2rem;
+  width: 28rem;
+  height: 25rem;
+  transition: all 1s ease-in-out;
+}
+
+.about-img-side span {
+  position: absolute;
+  background: var(--first-color);
+  border-radius: 50%;
+  right: 31px;
+  bottom: -26px;
+  width: 12rem;
+  height: 12rem;
+}
+
+.about-img-side span img {
+  width: 12rem;
+  animation: rotate 9s linear infinite;
+}
+
+.about-text-side {
+  padding-right: 2rem;
+}
+
+.about-text-side h3 {
+  color: var(--heading-color);
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  transition: color 0.4s cubic-bezier(0.69, 0.12, 0.19, 0.72);
+}
+
+.about-text-side h4 {
+  color: var(--second-color);
+  font-size: 1.7rem;
+  font-weight: 600;
+  line-height: 2.4rem;
+  margin-bottom: 1.5rem;
+  transition: color 0.4s cubic-bezier(0.69, 0.12, 0.19, 0.72);
+}
+
+.about-text-side p {
+  color: var(--detail-text-color);
+  font-size: 1.1rem;
+  line-height: 1.7rem;
+  margin-bottom: 1.5rem;
+  transition: color 0.4s cubic-bezier(0.69, 0.12, 0.19, 0.72);
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 551px) {
+  .profile-img {
+    width: 15rem;
+    height: 15rem;
+  }
+  .profile-info h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 1090px) {
+  .about-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .work-emoji {
+    bottom: 103px;
+    right: 277px;
+  }
+  .about-img-side span {
+    bottom: 30px;
+    right: 214px;
+  }
+  .side-img {
+    margin-bottom: 3.5rem;
+  }
+  .about-text-side {
+    margin: 0 auto;
+    max-width: 30rem;
+  }
+  .about-text-side {
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 980px) {
+  .about-img-side span {
+    display: none;
+  }
+  .work-emoji {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .side-img {
+    height: auto;
+    width: 95%;
+  }
+}
+
+/*******************************************************  Night Mode  *********************************************************/
+
+.about.dark {
+  background-color: var(--about-night-color);
+}
+
+.about.dark h4 {
+  color: var(--first-color);
+}
+
+.about.dark p {
+  color: var(--text-color-normal);
+}

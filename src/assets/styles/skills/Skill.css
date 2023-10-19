@@ -1,0 +1,59 @@
+:root {
+  ----heading-color: #147efb;
+}
+
+.skill {
+  padding: 4.2rem 0;
+}
+
+.skill-content {
+  height: 35rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.platform-ring {
+  transition: all 0.5s ease-in-out;
+  position: relative;
+  width: 25.5rem;
+  height: 25.5rem;
+  border-radius: 50%;
+}
+
+.centre {
+  position: absolute;
+  display: flex;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto auto;
+  justify-content: center;
+  align-items: center;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  transition: all 0.5s ease-in-out;
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.05),
+    inset 0px 0px 0px 1px rgba(209, 213, 219, 1);
+}
+
+.centre h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: auto 0;
+  text-transform: uppercase;
+  color: var(--heading-color);
+}
+
+@media (max-width: 600px) {
+  .platform-ring {
+    width: 17.7rem;
+    height: 17.7rem;
+  }
+  .centre {
+    width: 8rem;
+    height: 8rem;
+  }
+}

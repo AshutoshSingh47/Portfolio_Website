@@ -1,0 +1,114 @@
+:root{
+--night-color: #2b3342;
+}
+
+.platform-ring .icon {
+  position: relative;
+  list-style: none;
+  left: -50%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.platform-ring .icon .box {
+  display: flex;
+  place-items: center;
+  justify-content: center;
+  padding: 0.2rem;
+  width: 7rem;
+  height: 7rem;
+  position: absolute;
+  transition: all 0.5s ease-in-out;
+  overflow: hidden;
+  border-radius: 50%;
+  transform: rotate(calc(360deg / 9 * var(--i)));
+  transform-origin: 15.9rem;
+  overflow: hidden;
+  animation: circle 60s linear infinite;
+  box-shadow: 0px 0px 8px 2px rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+
+.platform-ring .icon.dark .box {
+  background-color: var(--night-color);
+}
+
+.platform-ring .icon .box img {
+  width: 85%;
+  height: 85%;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: 0.5s;
+  transform: rotate(calc(-360deg / 9 * var(--i)));
+  animation: circle 60s linear reverse infinite;
+}
+
+.platform-ring .icon:hover .box {
+  animation-play-state: paused;
+}
+
+.platform-ring .icon:hover .box > img {
+  animation-play-state: paused;
+}
+
+@keyframes circle {
+  100% {
+    rotate: 1turn;
+  }
+}
+
+@media (max-width: 600px) {
+  .platform-ring .icon .box {
+    width: 5rem;
+    height: 5rem;
+    transform-origin: 11.25rem;
+  }
+}
+
+.platform-ring .icon .box:nth-child(1):hover {
+  box-shadow: 0px 0px 8px 5px rgb(240 101 41 / 16%),
+    0 2px 10px 10px rgb(240 101 41 / 12%);
+}
+
+.platform-ring .icon .box:nth-child(2):hover {
+  box-shadow: 0px 0px 8px 5px rgb(41 101 241 / 16%),
+    0 2px 10px 10px rgb(41 101 241 / 12%);
+}
+
+.platform-ring .icon .box:nth-child(3):hover {
+  box-shadow: 0px 0px 8px 5px rgb(255 214 0 / 16%),
+    0 2px 10px 10px rgb(255 214 0 / 12%);
+}
+
+.platform-ring .icon .box:nth-child(4):hover {
+  box-shadow: 0px 0px 8px 5px rgb(97 218 251 / 16%),
+    0 2px 10px 10px rgb(97 218 251 / 12%);
+}
+
+.platform-ring .icon .box:nth-child(5):hover {
+  box-shadow: 0px 0px 8px 5px rgb(108 25 255 / 16%),
+    0 2px 10px 10px rgb(108 25 255 / 12%);
+}
+
+.platform-ring .icon .box:nth-child(6):hover {
+  box-shadow: 0px 0px 8px 5px rgb(119 123 179 / 16%),
+    0 2px 10px 10px rgb(119 123 179 / 12%);
+}
+
+.platform-ring .icon .box:nth-child(7):hover {
+  box-shadow: 0px 0px 8px 5px rgba(83 130 161 / 16%),
+    0px 2px 10px 10px rgba(83 130 161 / 12%);
+}
+
+.platform-ring .icon .box:nth-child(8):hover {
+  box-shadow: 0px 0px 8px 5px rgb(0 121 107 / 16%),
+    0 2px 10px 10px rgb(0 121 107 / 12%);
+}
+
+.platform-ring .icon .box:nth-child(9):hover {
+  box-shadow: 0px 0px 8px 5px rgb(61 220 132 / 16%),
+    0 2px 10px 10px rgb(61 220 132 / 12%);
+}

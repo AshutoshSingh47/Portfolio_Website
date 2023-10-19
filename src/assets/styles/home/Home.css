@@ -1,0 +1,160 @@
+:root {
+  --container-color: #f9f9f9;
+  --linkedin-logo-color: #0966c2;
+  --margin-color: #2d2e3280;
+  --text-color: #7843e9;
+  --detail-text-color: #555;
+  --heading-color: #147efb;
+  --background-color: #282c34;
+  --about-night-color: #2b3342;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.container {
+  padding: 0 2rem;
+  max-width: 70rem;
+}
+
+.content {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 45rem;
+  gap: 10rem;
+}
+
+.content-main {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+
+.profile-info {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: 36rem;
+}
+
+.profile-info h1 {
+  font-size: 4rem;
+  font-weight: 600;
+  margin: 1.5rem 0 1.2rem 0;
+  line-height: 1.2;
+  transition: all 0.4s cubic-bezier(0.69, 0.12, 0.19, 0.72);
+}
+
+.profile-info p {
+  color: var(--detail-text-color);
+  font-size: 1.2rem;
+  line-height: 1.8;
+  transition: all 0.4s cubic-bezier(0.69, 0.12, 0.19, 0.72);
+}
+
+.profile-info span {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 1.7rem;
+}
+
+.profile-info span a {
+  transition: all 0.4s cubic-bezier(0.69, 0.12, 0.19, 0.72);
+}
+
+.profile-info span a i.bi-linkedin {
+  color: var(--linkedin-logo-color);
+  transition: all 0.4s cubic-bezier(0.69, 0.12, 0.19, 0.72);
+}
+
+.profile-info span a i.bi-github {
+  color: var(--second-color);
+  transition: all 0.4s cubic-bezier(0.69, 0.12, 0.19, 0.72);
+}
+
+.profile-info span a:hover {
+  transform: translateY(-1rem);
+}
+
+.profile-img {
+  position: relative;
+  height: 20rem;
+  width: 20rem;
+  border-radius: 50%;
+  /* border-radius: 30% 50% 10% 30%; */
+  border: solid 3px var(--second-color);
+  background-image: url(../../images/Casual_Photo.jpg);
+  background-size: cover;
+  background-position: 40%;
+  background-repeat: no-repeat;
+  transition: all 0.4s cubic-bezier(0.69, 0.12, 0.19, 0.72);
+}
+
+.profile-info.dark h1 {
+  color: var(--first-color);
+}
+
+.profile-info.dark p {
+  color: var(--first-color);
+}
+
+.profile-info font {
+  transition: all 0.4s cubic-bezier(0.69, 0.12, 0.19, 0.72);
+}
+
+.profile-info.dark font {
+  color: var(--text-color);
+  font-weight: 600;
+}
+.profile-info.dark span a i.bi-linkedin {
+  color: var(--first-color);
+}
+
+.profile-info.dark span a i.bi-github {
+  color: var(--first-color);
+}
+
+.profile-img.dark {
+  border: solid 3px var(--text-color);
+}
+
+@media (max-width: 900px) {
+  .home {
+    height: auto;
+    padding: 8rem 0;
+  }
+  .content {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .content-main {
+    height: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 1rem;
+  }
+  .profile-info span {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 551px) {
+  .profile-img {
+    width: 15rem;
+    height: 15rem;
+  }
+  .profile-info h1 {
+    font-size: 3rem;
+  }
+}
