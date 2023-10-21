@@ -96,7 +96,6 @@ function Navbar() {
                     : ""
                   : ""
               }`}
-              onClick={() => manageActiveLinks(menu.title)}
             >
               <a href={`${menu.title}`} className="links"></a>
               <Link
