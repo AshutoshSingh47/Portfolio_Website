@@ -168,7 +168,7 @@ function ProjectCards(props) {
           </div>
           <div className="project-links">
             <a
-              href="https://appetize.io/app/vxjjun2p5zbku7wewbrtnuc2ee?device=pixel4&osVersion=11.0&scale=75"
+              href="https://github.com/AshutoshSingh47/Meme_Sharing_App"
               target="_blank"
               rel="noreferrer"
             >
