@@ -176,7 +176,7 @@ function ProjectCards(props) {
               <i className="bi bi-github"></i>
             </a>
             <a
-              href="https://appetize.io/app/vxjjun2p5zbku7wewbrtnuc2ee?device=pixel4&osVersion=11.0&scale=75"
+              href="https://ashutoshsingh47.github.io/PG_Life/home.html"
               target="_blank"
               rel="noreferrer"
             >
