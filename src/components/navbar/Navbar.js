@@ -14,6 +14,7 @@ function Navbar() {
   const [isDark, setisDark] = useState("");
   const [isActive, setisActive] = useState("");
   const [isSearch, setisSearch] = useState("");
+  const [isHomeActive, setisHomeActive] = useState(true);
   const menuItems = [
     { id: 1, title: "Home" },
     { id: 2, title: "About" },
@@ -22,12 +23,18 @@ function Navbar() {
     { id: 5, title: "Contact" },
   ];
 
-  console.log(isActive);
-
   function stickNavbar() {
     let windowHeight = window.scrollY;
 
     windowHeight > 20 ? setSticky("sticky") : setSticky("");
+  }
+
+  function manageActiveLinks(linkName) {
+    if (linkName == "Home") {
+      setisHomeActive(true);
+    } else {
+      setisHomeActive(false);
+    }
   }
 
   useEffect(() => {
@@ -81,7 +88,13 @@ function Navbar() {
             <li
               id={menu.id}
               className={`navbar-item ${
-                isActive == menu.title ? "active" : ""
+                menu.title == "Home" ? (isHomeActive ? "active" : "") : ""
+              }${
+                isActive == menu.title
+                  ? isActive != "Home"
+                    ? "active"
+                    : ""
+                  : ""
               }`}
             >
               <a href={`${menu.title}`} className="links"></a>
@@ -95,7 +108,7 @@ function Navbar() {
                 onClick={() =>
                   `${isOpen ? setisOpen(!isOpen) : ""} ${setisActive(
                     menu.title
-                  )}`
+                  )} ${manageActiveLinks(menu.title)}`
                 }
               >
                 {menu.title}
