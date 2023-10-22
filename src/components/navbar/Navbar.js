@@ -4,6 +4,7 @@ import Home from "../home/Home";
 import About from "../about/About";
 import Skill from "../skills/Skill";
 import Projects from "../projects/Projects";
+import Contact from "../contact/Contact";
 import { Link } from "react-scroll";
 
 import "../../assets/styles/navbar/Navbar.css";
@@ -144,6 +145,7 @@ function Navbar() {
       <About isDark={isDark} />
       <Skill isDark={isDark} />
       <Projects isDark={isDark} />
+      <Contact isDark={isDark} />
     </>
   );
 }

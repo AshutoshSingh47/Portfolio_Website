@@ -1,6 +1,6 @@
-import "../../assets/styles/buttons/Button.css";
+import "../../assets/styles/buttons/DownloadButton.css";
 
-function Button(props) {
+function DownloadButton(props) {
   return (
     <div className={`button-horizontal ${props.isDark ? "dark" : ""}`}>
       Download CV
@@ -9,4 +9,4 @@ function Button(props) {
   );
 }
 
-export default Button;
+export default DownloadButton;

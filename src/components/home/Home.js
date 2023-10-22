@@ -1,4 +1,4 @@
-import Button from "../buttons/Button";
+import DownloadButton from "../buttons/DownloadButton";
 
 import "../../assets/styles/home/Home.css";
 
@@ -32,11 +32,9 @@ function Home(props) {
                   <i className="bi bi-github"></i>
                 </a>
               </span>
-              <Button isDark={props.isDark} />
+              <DownloadButton isDark={props.isDark} />
             </div>
-            <div
-              className={`profile-img ${props.isDark ? "dark" : ""}`}
-            ></div>
+            <div className={`profile-img ${props.isDark ? "dark" : ""}`}></div>
           </div>
         </div>
       </div>
