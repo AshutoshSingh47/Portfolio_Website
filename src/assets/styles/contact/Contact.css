@@ -111,6 +111,7 @@
   padding: 0 4rem;
   border: 1px solid var(--second-color);
   background: transparent;
+  transition: all 0.4s cubic-bezier(0.69, 0.12, 0.19, 0.72);
 }
 
 .contact-form .input-box textarea {
@@ -119,6 +120,7 @@
   padding: 1rem 4rem;
   background: transparent;
   border: 1px solid var(--second-color);
+  transition: all 0.4s cubic-bezier(0.69, 0.12, 0.19, 0.72);
 }
 
 .contact-form label {
@@ -129,6 +131,7 @@
 
 .contact-form label i {
   font-size: 1.4rem;
+  transition: all 0.4s cubic-bezier(0.69, 0.12, 0.19, 0.72);
 }
 
 @media (max-width: 380px) {
