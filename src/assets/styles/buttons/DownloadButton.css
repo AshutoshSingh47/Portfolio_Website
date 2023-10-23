@@ -14,6 +14,7 @@
   color: var(--second-color);
   font-size: large;
   font-weight: 600;
+  text-decoration: none;
 }
 
 .button-horizontal i.bi-download {
