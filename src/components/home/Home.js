@@ -12,7 +12,7 @@ function Home(props) {
               <h1>Full-Stack Developer</h1>
               <p>
                 Hi, I'm <font>Ashutosh Singh</font> and I am a passionate
-                Full-Stack Developer based in Gorakhpur, India.
+                Full-Stack Developer based in Bangalore, India.
               </p>
               <span>
                 <a

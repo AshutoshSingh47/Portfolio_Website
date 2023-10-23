@@ -18,7 +18,7 @@ function About(props) {
           </div>
           <div className="about-text-side">
             <h3>ABOUT ME</h3>
-            <h4>A dedicated Full-Stack Developer based in Gorakhpur, India</h4>
+            <h4>A dedicated Full-Stack Developer based in Bangalore, India</h4>
             <p>
               What sets me apart is my genuine curiosity and eagerness to learn.
               I thrive in dynamic and fast-paced environments that encourage
