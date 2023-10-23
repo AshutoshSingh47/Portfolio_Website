@@ -8,19 +8,39 @@ function Contact(props) {
         <div className="contact-content">
           <div className="contact-info">
             <div className="social-media-stack">
-              <a href="" target="_blank" rel="noreferrer">
+              <a
+                href="https://www.instagram.com/ashu050502/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <i class="bi bi-instagram"></i>
               </a>
-              <a href="" target="_blank" rel="noreferrer">
+              <a
+                href="mailto:ashutoshsingh.iimt@gmail.com"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <i class="bi bi-envelope"></i>
               </a>
-              <a href="" target="_blank" rel="noreferrer">
+              <a
+                href="https://www.facebook.com/profile.php?id=100043153356207"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <i class="bi bi-facebook"></i>
               </a>
-              <a href="" target="_blank" rel="noreferrer">
+              <a
+                href="https://www.linkedin.com/in/ashutosh-singh-64b7371b1/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <i class="bi bi-linkedin"></i>
               </a>
-              <a href="" target="_blank" rel="noreferrer">
+              <a
+                href="https://github.com/AshutoshSingh47"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <i class="bi bi-github"></i>
               </a>
             </div>
