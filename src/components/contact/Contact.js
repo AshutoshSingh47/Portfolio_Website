@@ -3,7 +3,7 @@ import SubmitButton from "../buttons/SubmitButton";
 import Toast from "../toast_notification/Toast";
 import "../../assets/styles/contact/Contact.css";
 
-import emailjs from "@emailjs/browser";
+import emailjs, { send } from "@emailjs/browser";
 
 function Contact(props) {
   const form = useRef();
@@ -93,7 +93,6 @@ function Contact(props) {
                   name="user_name"
                   id="name"
                   placeholder="Full Name"
-                  required
                 ></input>
               </div>
               <div className="input-box">
@@ -105,7 +104,6 @@ function Contact(props) {
                   name="user_email"
                   id="email"
                   placeholder="Your Email"
-                  required
                 ></input>
               </div>
               <div className="input-box">
@@ -116,7 +114,6 @@ function Contact(props) {
                   name="message"
                   id="message"
                   placeholder="Your Message"
-                  required
                 ></textarea>
               </div>
               <SubmitButton isDark={props.isDark} />
