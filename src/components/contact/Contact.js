@@ -1,7 +1,37 @@
+import { useRef, useState } from "react";
 import SubmitButton from "../buttons/SubmitButton";
+import Toast from "../toast_notification/Toast";
 import "../../assets/styles/contact/Contact.css";
 
+import emailjs from "@emailjs/browser";
+
 function Contact(props) {
+  const form = useRef();
+
+  const [isProgress, setisProgress] = useState("");
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_zawv8tp",
+        "template_w7ymaqj",
+        form.current,
+        "sSEdNW_wtiwERy7Gn"
+      )
+      .then(
+        (result) => {
+          e.target.reset();
+          setisProgress("success");
+        },
+        (error) => {
+          console.log(error.text);
+          setisProgress("failure");
+        }
+      );
+  };
+
   return (
     <section className={`contact ${props.isDark ? "dark" : ""}`} id="Contact">
       <div className="container">
@@ -47,16 +77,23 @@ function Contact(props) {
           </div>
           <div className="contact-form">
             <p>Contact Me</p>
-            <form id="form" action="">
+            <form
+              id="form"
+              action="./"
+              method="POST"
+              ref={form}
+              onSubmit={sendEmail}
+            >
               <div className="input-box">
                 <label for="name" className="focus-input">
                   <i class="bi bi-person"></i>
                 </label>
                 <input
                   type="text"
-                  name="name"
+                  name="user_name"
                   id="name"
                   placeholder="Full Name"
+                  required
                 ></input>
               </div>
               <div className="input-box">
@@ -65,9 +102,10 @@ function Contact(props) {
                 </label>
                 <input
                   type="email"
-                  name="email"
+                  name="user_email"
                   id="email"
                   placeholder="Your Email"
+                  required
                 ></input>
               </div>
               <div className="input-box">
@@ -78,11 +116,17 @@ function Contact(props) {
                   name="message"
                   id="message"
                   placeholder="Your Message"
+                  required
                 ></textarea>
               </div>
+              <SubmitButton isDark={props.isDark} />
             </form>
-            <SubmitButton isDark={props.isDark} />
           </div>
+          <Toast
+            isDark={props.isDark}
+            isProgress={isProgress}
+            setisProgress={setisProgress}
+          />
         </div>
       </div>
     </section>

@@ -2,10 +2,10 @@ import "../../assets/styles/buttons/SubmitButton.css";
 
 function SubmitButton(props) {
   return (
-    <div className={`submit-button-horizontal ${props.isDark ? "dark" : ""}`}>
+    <button type="submit" className={`submit-button-horizontal ${props.isDark ? "dark" : ""}`}>
       Send
       <i class="bi bi-send"></i>
-    </div>
+    </button>
   );
 }
 
