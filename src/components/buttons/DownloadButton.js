@@ -1,5 +1,5 @@
 import "../../assets/styles/buttons/DownloadButton.css";
-import Resume from "../../assets/myCV/Web_Dev_Resume.pdf";
+import Resume from "../../assets/myCV/Ashutosh_Singh_Resume.pdf";
 
 function DownloadButton(props) {
   return (
