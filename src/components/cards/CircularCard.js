@@ -24,7 +24,7 @@ function CircularCard(props) {
   };
 
   return (
-    <ul className={`icon ${props.isDark?"dark":""}`}>
+    <ul className={`icon ${props.isDark ? "dark" : ""}`}>
       <li className="box" style={{ "--i": boxStyles["--i1"] }}>
         <img src={htmlLogo} alt="html"></img>
       </li>

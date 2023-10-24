@@ -43,35 +43,35 @@ function Contact(props) {
                 target="_blank"
                 rel="noreferrer"
               >
-                <i class="bi bi-instagram"></i>
+                <i className="bi bi-instagram"></i>
               </a>
               <a
                 href="mailto:ashutoshsingh.iimt@gmail.com"
                 target="_blank"
                 rel="noreferrer"
               >
-                <i class="bi bi-envelope"></i>
+                <i className="bi bi-envelope"></i>
               </a>
               <a
                 href="https://www.facebook.com/profile.php?id=100043153356207"
                 target="_blank"
                 rel="noreferrer"
               >
-                <i class="bi bi-facebook"></i>
+                <i className="bi bi-facebook"></i>
               </a>
               <a
                 href="https://www.linkedin.com/in/ashutosh-singh-64b7371b1/"
                 target="_blank"
                 rel="noreferrer"
               >
-                <i class="bi bi-linkedin"></i>
+                <i className="bi bi-linkedin"></i>
               </a>
               <a
                 href="https://github.com/AshutoshSingh47"
                 target="_blank"
                 rel="noreferrer"
               >
-                <i class="bi bi-github"></i>
+                <i className="bi bi-github"></i>
               </a>
             </div>
           </div>
@@ -86,7 +86,7 @@ function Contact(props) {
             >
               <div className="input-box">
                 <label for="name" className="focus-input">
-                  <i class="bi bi-person"></i>
+                  <i className="bi bi-person"></i>
                 </label>
                 <input
                   type="text"
@@ -97,7 +97,7 @@ function Contact(props) {
               </div>
               <div className="input-box">
                 <label for="email">
-                  <i class="bi bi-envelope-at"></i>
+                  <i className="bi bi-envelope-at"></i>
                 </label>
                 <input
                   type="email"
@@ -108,7 +108,7 @@ function Contact(props) {
               </div>
               <div className="input-box">
                 <label for="message">
-                  <i class="bi bi-chat"></i>
+                  <i className="bi bi-chat"></i>
                 </label>
                 <textarea
                   name="message"

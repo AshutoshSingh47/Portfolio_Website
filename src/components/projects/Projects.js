@@ -4,10 +4,7 @@ import "../../assets/styles/projects/Projects.css";
 
 function Projects(props) {
   return (
-    <section
-      className={`projects ${props.isDark ? "dark" : ""}`}
-      id="Projects"
-    >
+    <section className={`projects ${props.isDark ? "dark" : ""}`} id="Projects">
       <div className="container">
         <div className="projects-content">
           <p>My Projects</p>

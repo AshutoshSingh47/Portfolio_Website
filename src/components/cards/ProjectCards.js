@@ -51,7 +51,7 @@ function ProjectCards(props) {
               rel="noreferrer"
             >
               Live Demo
-              <i class="bi bi-box-arrow-up-right"></i>
+              <i className="bi bi-box-arrow-up-right"></i>
             </a>
           </div>
         </div>
@@ -95,7 +95,7 @@ function ProjectCards(props) {
               rel="noreferrer"
             >
               Live Demo
-              <i class="bi bi-box-arrow-up-right"></i>
+              <i className="bi bi-box-arrow-up-right"></i>
             </a>
           </div>
         </div>
@@ -181,7 +181,7 @@ function ProjectCards(props) {
               rel="noreferrer"
             >
               Live Demo
-              <i class="bi bi-box-arrow-up-right"></i>
+              <i className="bi bi-box-arrow-up-right"></i>
             </a>
           </div>
         </div>

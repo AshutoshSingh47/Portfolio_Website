@@ -5,6 +5,7 @@ import About from "../about/About";
 import Skill from "../skills/Skill";
 import Projects from "../projects/Projects";
 import Contact from "../contact/Contact";
+import Footer from "../footer/Footer";
 import { Link } from "react-scroll";
 
 import "../../assets/styles/navbar/Navbar.css";
@@ -87,6 +88,7 @@ function Navbar() {
         >
           {menuItems.map((menu) => (
             <li
+              key={menu.id}
               id={menu.id}
               className={`navbar-item ${
                 menu.title == "Home" ? (isHomeActive ? "active" : "") : ""
@@ -98,7 +100,6 @@ function Navbar() {
                   : ""
               }`}
             >
-              <a href={`${menu.title}`} className="links"></a>
               <Link
                 to={menu.title}
                 spy={true}
@@ -130,7 +131,7 @@ function Navbar() {
             onClick={() => setisSearch(!isSearch)}
           >
             <i className="bi bi-search search"></i>
-            <i class="bi bi-x-lg"></i>
+            <i className="bi bi-x-lg"></i>
             <div
               className={`search-bar ${isDark ? "dark" : ""}`}
               onClick={(e) => e.stopPropagation()}
@@ -146,6 +147,7 @@ function Navbar() {
       <Skill isDark={isDark} />
       <Projects isDark={isDark} />
       <Contact isDark={isDark} />
+      <Footer />
     </>
   );
 }

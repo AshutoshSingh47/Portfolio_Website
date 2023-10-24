@@ -108,6 +108,8 @@
 }
 
 .profile-info font {
+  color: var(--second-color);
+  font-weight: 600;
   transition: all 0.4s cubic-bezier(0.69, 0.12, 0.19, 0.72);
 }
 

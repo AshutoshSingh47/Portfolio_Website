@@ -20,13 +20,18 @@ function About(props) {
             <h3>ABOUT ME</h3>
             <h4>A dedicated Full-Stack Developer based in Bangalore, India</h4>
             <p>
-              What sets me apart is my genuine curiosity and eagerness to learn.
-              I thrive in dynamic and fast-paced environments that encourage
-              innovation and creativity. I am confident in my ability to quickly
-              adapt to new technologies and frameworks, ensuring efficient and
-              high-quality software solutions. I am not only passionate about
-              delivering exceptional results but also about continuously
-              improving my skills and expanding my knowledge base.
+              As a versatile Full Stack Developer with expertise in a wide array
+              of technologies. My skills encompass <font>HTML</font>,{" "}
+              <font>CSS</font>, <font>JavaScript</font>, <font>React.js</font>,{" "}
+              <font>Bootstrap</font>, <font>PHP</font>, and <font>MySQL</font>,{" "}
+              allowing me to create seamless and visually appealing web
+              experiences. Additionally, my proficiency extends to{" "}
+              <font>Java</font> and Android application development, including{" "}
+              <font>Android(AOSP)</font> and{" "}
+              <font>Android Automotive Operating System (AAOS)</font>. As a
+              designer and developer, I blend creativity with technical prowess
+              to deliver exceptional results. Let's collaborate and bring your
+              ideas to life with innovation and expertise!
             </p>
           </div>
         </div>

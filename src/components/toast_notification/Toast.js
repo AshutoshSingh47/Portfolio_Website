@@ -21,17 +21,17 @@ function Toast({ isDark, isProgress, setisProgress }) {
   return (
     <>
       <div
-        className={`toast-box ${isDark?"dark":""} ${
+        className={`toast-box ${isDark ? "dark" : ""} ${
           isProgress === "success" ? "active" : ""
         }  success-box`}
       >
         <div className="toast-content">
-          <i class="bi bi-check-lg check"></i>
+          <i className="bi bi-check-lg check"></i>
           <div className="message">
             <span className="text text1">Success</span>
             <span className="text text2">Your message has been sent</span>
           </div>
-          <i class="bi bi-x close" onClick={() => manageProgress()}></i>
+          <i className="bi bi-x close" onClick={() => manageProgress()}></i>
           <div
             className={`progress-box ${
               isProgress === "success" ? "active" : ""
@@ -40,7 +40,7 @@ function Toast({ isDark, isProgress, setisProgress }) {
         </div>
       </div>
       <div
-        className={`toast-box ${isDark?"dark":""} ${
+        className={`toast-box ${isDark ? "dark" : ""} ${
           isProgress === "failure" ? "active" : ""
         } failure-box`}
       >
@@ -50,7 +50,7 @@ function Toast({ isDark, isProgress, setisProgress }) {
             <span className="text text1">Failure</span>
             <span className="text text2">Your message has not been sent</span>
           </div>
-          <i class="bi bi-x close" onClick={() => manageProgress()}></i>
+          <i className="bi bi-x close" onClick={() => manageProgress()}></i>
           <div
             className={`progress-box ${
               isProgress === "failure" ? "active" : ""
