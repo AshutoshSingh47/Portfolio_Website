@@ -8,6 +8,9 @@ import Contact from "../contact/Contact";
 import Footer from "../footer/Footer";
 import { Link } from "react-scroll";
 
+import logo1 from "../../assets/images/code.png";
+import logo2 from "../../assets/images/code (1).png";
+
 import "../../assets/styles/navbar/Navbar.css";
 
 function Navbar() {
