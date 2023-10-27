@@ -6,6 +6,7 @@ import Skill from "../skills/Skill";
 import Projects from "../projects/Projects";
 import Contact from "../contact/Contact";
 import Footer from "../footer/Footer";
+import { Analytics } from "@vercel/analytics/react";
 import { Link } from "react-scroll";
 
 import logo1 from "../../assets/images/code.png";
@@ -151,6 +152,7 @@ function Navbar() {
       <Projects isDark={isDark} />
       <Contact isDark={isDark} />
       <Footer />
+      <Analytics />
     </>
   );
 }
