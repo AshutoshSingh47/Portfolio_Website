@@ -6,7 +6,7 @@ function DownloadButton(props) {
     <a
       className={`button-horizontal ${props.isDark ? "dark" : ""}`}
       href={Resume}
-      download="Ashutosh_Singh_Resume"
+      download="Ashutosh_Singh_Resume.pdf"
     >
       Download CV
       <i className="bi bi-download"></i>
