@@ -2,11 +2,13 @@ import htmlLogo from "../../assets/icons/html-logo-96.svg";
 import cssLogo from "../../assets/icons/css-logo.svg";
 import javascriptLogo from "../../assets/icons/javascript-logo.svg";
 import reactLogo from "../../assets/images/logo192.png";
-import bootstrapLogo from "../../assets/icons/bootstrap-logo.svg";
-import phpLogo from "../../assets/icons/php-logo.svg";
 import javaLogo from "../../assets/icons/java.svg";
-import mysqlLogo from "../../assets/icons/mysql-20.svg";
 import androidLogo from "../../assets/icons/android.svg";
+import sasslogo from "../../assets/icons/sass-logo.svg";
+import typescriptlogo from "../../assets/icons/typescript-logo.svg";
+import mongodblogo from "../../assets/icons/mongodb-logo.svg";
+import tailwindcsslogo from "../../assets/icons/tailwindcss-logo.svg";
+import nodejslogo from "../../assets/icons/nodejs-logo.svg";
 
 import "../../assets/styles/cards/CircularCard.css";
 
@@ -21,6 +23,8 @@ function CircularCard(props) {
     "--i7": 7,
     "--i8": 8,
     "--i9": 9,
+    "--i10": 10,
+    "--i11": 11,
   };
 
   return (
@@ -35,21 +39,27 @@ function CircularCard(props) {
         <img src={javascriptLogo} alt="html"></img>
       </li>
       <li className="box" style={{ "--i": boxStyles["--i4"] }}>
-        <img src={reactLogo} alt="html"></img>
+        <img src={typescriptlogo} alt="html"></img>
       </li>
       <li className="box" style={{ "--i": boxStyles["--i5"] }}>
-        <img src={bootstrapLogo} alt="html"></img>
+        <img src={reactLogo} alt="html"></img>
       </li>
       <li className="box" style={{ "--i": boxStyles["--i6"] }}>
-        <img src={phpLogo} alt="html"></img>
+        <img src={tailwindcsslogo} alt="html"></img>
       </li>
       <li className="box" style={{ "--i": boxStyles["--i7"] }}>
-        <img src={javaLogo} alt="html"></img>
+        <img src={sasslogo} alt="html"></img>
       </li>
       <li className="box" style={{ "--i": boxStyles["--i8"] }}>
-        <img src={mysqlLogo} alt="html"></img>
+        <img src={nodejslogo} alt="html"></img>
       </li>
       <li className="box" style={{ "--i": boxStyles["--i9"] }}>
+        <img src={mongodblogo} alt="html"></img>
+      </li>
+      <li className="box" style={{ "--i": boxStyles["--i10"] }}>
+        <img src={javaLogo} alt="html"></img>
+      </li>
+      <li className="box" style={{ "--i": boxStyles["--i11"] }}>
         <img src={androidLogo} alt="html"></img>
       </li>
     </ul>
