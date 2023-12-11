@@ -77,7 +77,7 @@ function Navbar() {
         >
           <i className="bi bi-list"></i>
         </div>
-        <img src={logo} className="App-logo" alt="logo"></img>
+        <div className={`App-logo ${isDark?"dark-mode":""}`}><span>Ashutosh Singh</span></div>
         <ul
           className={`navbar-menu ${
             isDark ? "dark-mode changeHoverEffect" : ""

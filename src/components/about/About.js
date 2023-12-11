@@ -22,8 +22,9 @@ function About(props) {
             <p>
               As a versatile Full Stack Developer with expertise in a wide array
               of technologies. My skills encompass <font>HTML</font>,{" "}
-              <font>CSS</font>, <font>JavaScript</font>, <font>React.js</font>,{" "}
-              <font>Bootstrap</font>, <font>PHP</font>, and <font>MySQL</font>,{" "}
+              <font>CSS</font>, <font>JavaScript</font>, <font>TypeScript</font>
+              , <font>React.js</font>, <font>Tailwind CSS</font>,{" "}
+              <font>SASS</font>, <font>Node.js</font> and <font>MongoDB</font>,{" "}
               allowing me to create seamless and visually appealing web
               experiences. Additionally, my proficiency extends to{" "}
               <font>Java</font> and Android application development, including{" "}
