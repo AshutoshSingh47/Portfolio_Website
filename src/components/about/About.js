@@ -18,9 +18,9 @@ function About(props) {
           </div>
           <div className="about-text-side">
             <h3>ABOUT ME</h3>
-            <h4>A dedicated Full-Stack Developer based in Bangalore, India</h4>
+            <h4>A dedicated Front-End Developer based in Bangalore, India</h4>
             <p>
-              As a versatile Full Stack Developer with expertise in a wide array
+              As a versatile Front-End Developer with expertise in a wide array
               of technologies. My skills encompass <font>HTML</font>,{" "}
               <font>CSS</font>, <font>JavaScript</font>, <font>TypeScript</font>
               , <font>React.js</font>, <font>Tailwind CSS</font>,{" "}

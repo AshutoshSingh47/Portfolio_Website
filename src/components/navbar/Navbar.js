@@ -12,6 +12,7 @@ import logo1 from "../../assets/images/code.png";
 import logo2 from "../../assets/images/code (1).png";
 
 import "../../assets/styles/navbar/Navbar.css";
+import TechStacks from "../tech_stacks";
 
 function Navbar() {
   const [sticky, setSticky] = useState("");
@@ -77,7 +78,9 @@ function Navbar() {
         >
           <i className="bi bi-list"></i>
         </div>
-        <div className={`App-logo ${isDark?"dark-mode":""}`}><span>Ashutosh Singh</span></div>
+        <div className={`App-logo ${isDark ? "dark-mode" : ""}`}>
+          <span>Ashutosh Singh</span>
+        </div>
         <ul
           className={`navbar-menu ${
             isDark ? "dark-mode changeHoverEffect" : ""
@@ -129,25 +132,12 @@ function Navbar() {
             <i className="bi bi-brightness-high"></i>
             <i className="bi bi-moon"></i>
           </div>
-          <div
-            className={`search-button ${isSearch ? "dark" : ""}`}
-            onClick={() => setisSearch(!isSearch)}
-          >
-            <i className="bi bi-search search"></i>
-            <i className="bi bi-x-lg"></i>
-            <div
-              className={`search-bar ${isDark ? "dark" : ""}`}
-              onClick={(e) => e.stopPropagation()}
-            >
-              <input type="text" id="text" placeholder="Search..."></input>
-              <i className="bi bi-search"></i>
-            </div>
-          </div>
         </div>
       </navbar>
       <Home isDark={isDark} />
       <About isDark={isDark} />
-      <Skill isDark={isDark} />
+      {/* <Skill isDark={isDark} /> */}
+      <TechStacks />
       <Projects isDark={isDark} />
       <Contact isDark={isDark} />
       <Footer />

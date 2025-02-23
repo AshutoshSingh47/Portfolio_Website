@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html {
   scroll-behavior: smooth;
 }
@@ -14,4 +18,18 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+@layer base {
+  :root {
+    --background-color: #ffffff;
+    --text-color: #000000;
+    --tech-text-color: #000000;
+  }
+
+  .dark {
+    --background-color: #282c34;
+    --text-color: #7843e9;
+    --tech-text-color: #ffffff;
+  }
 }
