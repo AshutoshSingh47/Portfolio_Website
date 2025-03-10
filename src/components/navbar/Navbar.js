@@ -1,16 +1,10 @@
-import logo from "../../assets/icons/logo.svg";
 import { useState, useEffect } from "react";
 import Home from "../home/Home";
 import About from "../about/About";
-import Skill from "../skills/Skill";
 import Projects from "../projects/Projects";
 import Contact from "../contact/Contact";
 import Footer from "../footer/Footer";
 import { Link } from "react-scroll";
-
-import logo1 from "../../assets/images/code.png";
-import logo2 from "../../assets/images/code (1).png";
-
 import "../../assets/styles/navbar/Navbar.css";
 import TechStacks from "../tech_stacks";
 
@@ -19,7 +13,6 @@ function Navbar() {
   const [isOpen, setisOpen] = useState(false);
   const [isDark, setisDark] = useState("");
   const [isActive, setisActive] = useState("");
-  const [isSearch, setisSearch] = useState("");
   const [isHomeActive, setisHomeActive] = useState(true);
   const menuItems = [
     { id: 1, title: "Home" },
@@ -52,6 +45,7 @@ function Navbar() {
 
   useEffect(() => {
     document.body.style.backgroundColor = isDark ? "#282c34" : "";
+    document.documentElement.classList.toggle("dark");
     return () => {
       document.body.style.backgroundColor = "";
     };
@@ -136,8 +130,7 @@ function Navbar() {
       </navbar>
       <Home isDark={isDark} />
       <About isDark={isDark} />
-      {/* <Skill isDark={isDark} /> */}
-      <TechStacks />
+      <TechStacks isDark={isDark} />
       <Projects isDark={isDark} />
       <Contact isDark={isDark} />
       <Footer />

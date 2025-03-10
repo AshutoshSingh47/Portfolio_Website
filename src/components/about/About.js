@@ -1,7 +1,6 @@
 import emoji from "../../assets/images/work-emoji.png";
 import sideimg from "../../assets/images/about-me-img.webp";
 import text from "../../assets/icons/rotate.svg";
-
 import "../../assets/styles/about/About.css";
 
 function About(props) {
@@ -20,19 +19,16 @@ function About(props) {
             <h3>ABOUT ME</h3>
             <h4>A dedicated Front-End Developer based in Bangalore, India</h4>
             <p>
-              As a versatile Front-End Developer with expertise in a wide array
-              of technologies. My skills encompass <font>HTML</font>,{" "}
+              I am a <font>Front-End Developer</font> with a strong focus on
+              creating responsive, user-friendly, and visually appealing web
+              applications. My skill set includes <font>HTML</font>,{" "}
               <font>CSS</font>, <font>JavaScript</font>, <font>TypeScript</font>
-              , <font>React.js</font>, <font>Tailwind CSS</font>,{" "}
-              <font>SASS</font>, <font>Node.js</font> and <font>MongoDB</font>,{" "}
-              allowing me to create seamless and visually appealing web
-              experiences. Additionally, my proficiency extends to{" "}
-              <font>Java</font> and Android application development, including{" "}
-              <font>Android(AOSP)</font> and{" "}
-              <font>Android Automotive Operating System (AAOS)</font>. As a
-              designer and developer, I blend creativity with technical prowess
-              to deliver exceptional results. Let's collaborate and bring your
-              ideas to life with innovation and expertise!
+              , <font>React.js</font>, <font>Next.js</font>,{" "}
+              <font>Tailwind CSS</font>, <font>SASS</font>,{" "}
+              <font>TanStack</font>, <font>Shadcn</font>, <font>D3.js</font> and{" "}
+              <font>Git</font>, I enjoy translating ideas and designs into
+              seamless digital experiences. Let’s work together to bring your
+              vision to life!
             </p>
           </div>
         </div>

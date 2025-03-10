@@ -1,10 +1,5 @@
 import DownloadButton from "../buttons/DownloadButton";
-
 import "../../assets/styles/home/Home.css";
-import Linkedin from "../../assets/icons/linkedin.svg";
-import Github from "../../assets/icons/github.svg";
-import TechStacks from "../tech_stacks";
-import { TechStack } from "../../data/techStack";
 
 function Home(props) {
   return (
