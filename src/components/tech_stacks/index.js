@@ -5,7 +5,7 @@ function TechStacks(props) {
   return (
     <section className="h-auto w-full py-16">
       <div className="flex flex-col gap-5 justify-between w-full container">
-        <h3 className="text-[var(--heading-color)] text-center text-[1.2rem] font-semibold uppercase">
+        <h3 className="text-[var(--heading-color)] text-center text-[1.2rem] font-semibold">
           My Skills
         </h3>
         <ul className="grid grid-cols-2 grid-rows-subgrid gap-4 md:grid-cols-4 lg:grid-cols-5 w-3/4 mx-auto">

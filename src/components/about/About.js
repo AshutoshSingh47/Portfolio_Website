@@ -16,7 +16,7 @@ function About(props) {
             </span>
           </div>
           <div className="about-text-side">
-            <h3>ABOUT ME</h3>
+            <h3>About Me</h3>
             <h4>A dedicated Front-End Developer based in Bengaluru, India</h4>
             <p>
               I am a <font>Front-End Developer</font> with a strong focus on
