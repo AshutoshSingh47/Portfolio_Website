@@ -11,7 +11,7 @@ function Home(props) {
               <h1>Front-End Developer</h1>
               <p className="text-lg">
                 Hi, I'm <font>Ashutosh Singh</font> and I am a passionate
-                Front-End Developer based in Bangalore, India.
+                Front-End Developer based in Bengaluru, India.
               </p>
               <span>
                 <a

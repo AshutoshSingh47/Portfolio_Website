@@ -14,7 +14,6 @@
 }
 
 .contact-content {
-  max-width: 45rem;
   margin: 0 auto;
   display: grid;
   border-radius: 0.3rem;
@@ -53,47 +52,45 @@
   border-top-left-radius: 0.3rem;
 }
 
-.contact-info .social-media-stack {
+.social-media-stack {
   padding-bottom: 1rem;
   display: flex;
   gap: 2rem;
   margin: 0 auto;
 }
 
-.contact-info .social-media-stack a {
+.social-media-stack a {
   transition: all 0.4s cubic-bezier(0.69, 0.12, 0.19, 0.72);
 }
 
-.contact-info .social-media-stack i {
-  font-size: 1.3rem;
+.social-media-stack i {
+  font-size: 2rem;
   color: var(--first-color);
   transition: all 0.4s cubic-bezier(0.69, 0.12, 0.19, 0.72);
 }
 
-.contact-info .social-media-stack a:hover {
+.social-media-stack a:hover {
   transform: translateY(-1rem);
 }
 
 .contact-form {
   display: flex;
-  padding: 0 1rem;
+  padding: 1rem;
   flex-direction: column;
   transition: all 0.4s cubic-bezier(0.69, 0.12, 0.19, 0.72);
 }
 
 .contact-form p {
   color: var(--heading-color);
-  margin: 0 auto 3rem;
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   font-weight: 600;
-  text-transform: uppercase;
   transition: all 0.4s cubic-bezier(0.69, 0.12, 0.19, 0.72);
 }
 
 #form {
-  gap: 2rem;
+  gap: 1rem;
   width: 100%;
-  margin: 0 auto;
+  margin: 2rem auto 0;
   display: flex;
   flex-direction: column;
   transition: all 0.4s cubic-bezier(0.69, 0.12, 0.19, 0.72);
@@ -104,11 +101,17 @@
   position: relative;
 }
 
+.contact-form span {
+  font-size: 14px;
+}
+
 .contact .contact-form .input-box input {
   width: 100%;
-  height: 3.7rem;
-  padding: 0 4rem;
-  border: 1px solid var(--second-color);
+  height: 3rem;
+  padding: 0 3rem;
+  font-size: 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
   background: transparent;
   transition: all 0.4s cubic-bezier(0.69, 0.12, 0.19, 0.72);
 }
@@ -116,25 +119,21 @@
 .contact-form .input-box textarea {
   width: 100%;
   height: 10rem;
-  padding: 1rem 4rem;
+  padding: 1rem 3rem;
+  font-size: 1rem;
   background: transparent;
-  border: 1px solid var(--second-color);
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
   transition: all 0.4s cubic-bezier(0.69, 0.12, 0.19, 0.72);
 }
 
-.contact-form label {
-  position: absolute;
-  top: 0.9rem;
-  left: 1rem;
-}
-
 .contact-form label i {
-  font-size: 1.4rem;
+  font-size: 1rem;
   transition: all 0.4s cubic-bezier(0.69, 0.12, 0.19, 0.72);
 }
 
 @media (max-width: 380px) {
-  .contact-info .social-media-stack i {
+  .social-media-stack i {
     font-size: 1.1rem;
   }
 }
@@ -158,6 +157,11 @@
   outline: none;
   color: var(--first-color);
   border-color: var(--first-color);
+}
+
+.contact.dark .contact-form span {
+  font-size: 14px;
+  color: var(--first-color);
 }
 
 .contact.dark .contact-form .input-box textarea {

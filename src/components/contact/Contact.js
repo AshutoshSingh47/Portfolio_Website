@@ -34,49 +34,44 @@ function Contact(props) {
 
   return (
     <section className={`contact ${props.isDark ? "dark" : ""}`} id="Contact">
-      <div className="container">
-        <div className="contact-content">
-          <div className="contact-info">
-            <div className="social-media-stack">
+      <div className="container flex flex-col-reverse md:flex-row">
+        <div className="flex flex-col flex-1 gap-6 py-10">
+          <h1 className="text-4xl text-[var(--heading-color)] font-semibold">
+            Contact Me
+          </h1>
+          <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-3">
               <a
-                href="https://www.instagram.com/ashu050502/"
+                className="font-medium dark:text-white"
+                href="mailto:ashu050502@gmail.com"
                 target="_blank"
                 rel="noreferrer"
               >
-                <i className="bi bi-instagram"></i>
+                Email : ashu050502@gmail.com
               </a>
-              <a
-                href="mailto:ashutoshsingh.iimt@gmail.com"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <i className="bi bi-envelope"></i>
-              </a>
-              <a
-                href="https://www.facebook.com/profile.php?id=100043153356207"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <i className="bi bi-facebook"></i>
-              </a>
-              <a
-                href="https://www.linkedin.com/in/ashutosh-singh-64b7371b1/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <i className="bi bi-linkedin"></i>
-              </a>
-              <a
-                href="https://github.com/AshutoshSingh47"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <i className="bi bi-github"></i>
-              </a>
+              <div className="flex gap-3 text-gray-500 dark:text-white">
+                <a
+                  href="https://www.linkedin.com/in/ashutoshsinghdeveloper/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i className="bi bi-linkedin text-xl"></i>
+                </a>
+                <a
+                  href="https://github.com/AshutoshSingh47"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i className="bi bi-github text-xl"></i>
+                </a>
+              </div>
             </div>
           </div>
+        </div>
+        <div className="contact-content w-full md:w-1/2">
           <div className="contact-form">
-            <p>Contact Me</p>
+            <p>Get in Touch</p>
+            <span>Let’s collaborate. Get in touch today!</span>
             <form
               id="form"
               action="./"
@@ -85,31 +80,37 @@ function Contact(props) {
               onSubmit={sendEmail}
             >
               <div className="input-box">
-                <label for="name" className="focus-input">
+                <label
+                  for="name"
+                  className="absolute top-1/2 -translate-y-2/4 left-4"
+                >
                   <i className="bi bi-person"></i>
                 </label>
                 <input
                   type="text"
                   name="user_name"
                   id="name"
-                  placeholder="Full Name"
+                  placeholder="Name"
                   required
                 ></input>
               </div>
               <div className="input-box">
-                <label for="email">
+                <label
+                  for="email"
+                  className="absolute top-1/2 -translate-y-2/4 left-4"
+                >
                   <i className="bi bi-envelope-at"></i>
                 </label>
                 <input
                   type="email"
                   name="user_email"
                   id="email"
-                  placeholder="Your Email"
+                  placeholder="Email"
                   required
                 ></input>
               </div>
               <div className="input-box">
-                <label for="message">
+                <label for="message" className="absolute top-4 left-4">
                   <i className="bi bi-chat"></i>
                 </label>
                 <textarea

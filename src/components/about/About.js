@@ -17,7 +17,7 @@ function About(props) {
           </div>
           <div className="about-text-side">
             <h3>ABOUT ME</h3>
-            <h4>A dedicated Front-End Developer based in Bangalore, India</h4>
+            <h4>A dedicated Front-End Developer based in Bengaluru, India</h4>
             <p>
               I am a <font>Front-End Developer</font> with a strong focus on
               creating responsive, user-friendly, and visually appealing web
