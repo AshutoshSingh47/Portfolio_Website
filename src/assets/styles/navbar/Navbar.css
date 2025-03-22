@@ -102,33 +102,6 @@ ul {
   transition: all ease-in-out 0.2s;
 }
 
-.navbar-item::after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 0px;
-  height: 3px;
-  left: 50%;
-  top: 30px;
-  bottom: 0;
-  background: var(--third-color);
-  transition: all ease-in-out 0.2s;
-}
-
-.navbar-item:hover::after {
-  width: 100%;
-  left: 0;
-}
-
-.navbar-item:hover {
-  border: none;
-}
-
-.navbar-item.active::after {
-  width: 100%;
-  left: 0;
-}
-
 .hamburger {
   margin: auto 20px;
   display: none;
@@ -230,14 +203,14 @@ ul {
     position: fixed;
     top: 0;
     left: -100%;
-    height: 120vh;
+    height: 100vh;
     width: 250px;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
     background-color: var(--background-color);
     margin: 0 0;
-    gap: 0.5rem;
+    gap: 0rem;
     padding: 50px 25px 50px 25px;
     transition: all 0.5s cubic-bezier(0.85, 0.3, 0.17, 0.68) 0s;
     z-index: 1;

@@ -12,6 +12,7 @@ import shadcn from "../assets/techStackIcons/shadcn.svg";
 import darkShadcn from "../assets/techStackIcons/dark-shadcn.svg";
 import D3 from "../assets/techStackIcons/d3.svg";
 import git from "../assets/techStackIcons/git.svg";
+import jira from "../assets/techStackIcons/jira.svg";
 
 export const TechStack = [
   { name: "HTML", logo: html, darkLogo: html },
@@ -26,4 +27,5 @@ export const TechStack = [
   { name: "Shadcn", logo: shadcn, darkLogo: darkShadcn },
   { name: "D3.js", logo: D3, darkLogo: D3 },
   { name: "Git", logo: git, darkLogo: git },
+  { name: "Jira", logo: jira, darkLogo: jira },
 ];

@@ -3,7 +3,7 @@ import { TechStack } from "../../data/techStack";
 function TechStacks(props) {
   const { isDark } = props;
   return (
-    <section className="h-auto w-full py-16">
+    <section className="h-auto w-full py-16" id="Skills">
       <div className="flex flex-col gap-5 justify-between w-full container">
         <h3 className="text-[var(--heading-color)] text-center text-[1.2rem] font-semibold">
           My Skills

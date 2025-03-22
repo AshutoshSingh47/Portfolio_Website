@@ -87,19 +87,7 @@ function Navbar() {
           }`}
         >
           {menuItems.map((menu) => (
-            <li
-              key={menu.id}
-              id={menu.id}
-              className={`navbar-item ${
-                menu.title == "Home" ? (isHomeActive ? "active" : "") : ""
-              }${
-                isActive == menu.title
-                  ? isActive != "Home"
-                    ? "active"
-                    : ""
-                  : ""
-              }`}
-            >
+            <li key={menu.id} id={menu.id} className="navbar-item">
               <Link
                 to={menu.title}
                 spy={true}
