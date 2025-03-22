@@ -42,7 +42,7 @@ function Contact(props) {
           <div className="flex flex-col gap-2">
             <div className="flex flex-col gap-3">
               <a
-                className="font-medium dark:text-white hover:underline hover:underline-offset-2 w-fit"
+                className="font-medium text-black dark:text-white hover:underline hover:underline-offset-2 w-fit"
                 href="mailto:ashu050502@gmail.com"
                 target="_blank"
                 rel="noreferrer"

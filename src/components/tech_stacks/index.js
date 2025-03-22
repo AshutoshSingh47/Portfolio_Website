@@ -19,7 +19,9 @@ function TechStacks(props) {
                 src={isDark ? tech.darkLogo : tech.logo}
                 alt={tech.name}
               />
-              <span className="text-[var(--tech-text-color)]">{tech.name}</span>
+              <span className="dark:text-white text-[var(--detail-text-color)] text-sm font-medium">
+                {tech.name}
+              </span>
             </li>
           ))}
         </ul>
