@@ -40,7 +40,7 @@ export const ProjectStack = [
     description:
       "With a focus on simplicity and clean design, this store prioritize user experience, making it easy for customers to find and purchase the products they need.",
     techStacks: ["React", "Vanilla CSS"],
-    liveDemo: "",
-    githubLink: "",
+    liveDemo: "https://ashutosh-singh-minimalist-e-commerce.vercel.app/",
+    githubLink: "https://github.com/AshutoshSingh47/Minimalist-E-Commerce.git",
   },
 ];

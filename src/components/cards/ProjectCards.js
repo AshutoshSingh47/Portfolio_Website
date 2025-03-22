@@ -19,13 +19,15 @@ function ProjectCards(props) {
           <div key={name} className={className}>
             <div className="pro_img">
               <a href={liveDemo} target="_blank" rel="noreferrer">
-                <img src={image} className={imageClassName}></img>
+                <img
+                  src={image}
+                  className={imageClassName}
+                  alt={`${name}icon`}
+                ></img>
               </a>
             </div>
             <div className="pro_text">
-              <h3>
-                {name}
-              </h3>
+              <h3>{name}</h3>
               <p>{description}</p>
               <ul className="stack">
                 {techStacks.map((tech) => (

@@ -1,9 +1,9 @@
 import { useRef, useState } from "react";
+import "../../assets/styles/contact/Contact.css";
 import SubmitButton from "../buttons/SubmitButton";
 import Toast from "../toast_notification/Toast";
-import "../../assets/styles/contact/Contact.css";
 
-import emailjs, { send } from "@emailjs/browser";
+import emailjs from "@emailjs/browser";
 
 function Contact(props) {
   const form = useRef();

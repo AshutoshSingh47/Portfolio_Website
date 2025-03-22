@@ -39,6 +39,7 @@
     ]
   },
   "devDependencies": {
+    "serve": "^14.2.4",
     "tailwindcss": "^3.4.17"
   }
 }

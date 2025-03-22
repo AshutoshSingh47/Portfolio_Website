@@ -7,7 +7,7 @@ function Toast({ isDark, isProgress, setisProgress }) {
   }
 
   useEffect(() => {
-    if (isProgress === "success" || isProgress == "failure") {
+    if (isProgress === "success" || isProgress === "failure") {
       const timer = setTimeout(() => {
         setisProgress("");
       }, 3000);
