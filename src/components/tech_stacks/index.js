@@ -19,7 +19,7 @@ function TechStacks(props) {
                 src={isDark ? tech.darkLogo : tech.logo}
                 alt={tech.name}
               />
-              <span className="text-black dark:text-white text-sm font-medium">
+              <span className=" dark:text-white text-sm font-medium">
                 {tech.name}
               </span>
             </li>

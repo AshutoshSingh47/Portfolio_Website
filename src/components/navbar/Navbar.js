@@ -35,7 +35,12 @@ function Navbar() {
 
   useEffect(() => {
     document.body.style.backgroundColor = isDark ? "#282c34" : "";
-    document.documentElement.classList.toggle("dark");
+    if (isDark) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+
     return () => {
       document.body.style.backgroundColor = "";
     };
@@ -85,9 +90,7 @@ function Navbar() {
                 offset={-100}
                 duration={300}
                 className="links"
-                onClick={() =>
-                  `${isOpen ? setisOpen(!isOpen) : ""}}`
-                }
+                onClick={() => `${isOpen ? setisOpen(!isOpen) : ""}}`}
               >
                 {menu.title}
               </Link>
