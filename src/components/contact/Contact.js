@@ -49,7 +49,7 @@ function Contact(props) {
               >
                 Email : ashu050502@gmail.com
               </a>
-              <div className="flex gap-3 text-gray-500 dark:text-white">
+              <div className="flex gap-3 dark:text-white">
                 <a
                   href="https://www.linkedin.com/in/ashutoshsinghdeveloper/"
                   target="_blank"
