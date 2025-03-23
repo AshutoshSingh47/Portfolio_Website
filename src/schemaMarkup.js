@@ -11,8 +11,8 @@ const SchemaMarkup = () => {
           "jobTitle": "Front End Developer",
           "url": "https://ashutosh-singh.vercel.app/",
           "sameAs": [
-            "https://linkedin.com/in/ashutosh-singh",
-            "https://github.com/ashutosh-singh"
+            "https://www.linkedin.com/in/ashutoshsinghdeveloper/",
+            "https://github.com/AshutoshSingh47"
           ],
           "skills": [
             "HTML",
